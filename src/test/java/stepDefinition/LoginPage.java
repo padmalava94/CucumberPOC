@@ -14,6 +14,8 @@ public class LoginPage {
 		
 		System.setProperty("webdriver.chrome.driver", "D:\\Selenium\\My_Worksspace\\CucumberPOC\\Drivers\\chromedriver.exe");
 		driver= new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://www.phptravels.net/");
 		
 	    
 		
@@ -46,5 +48,15 @@ public class LoginPage {
 	public void clicks_on_login_button() {
 	   
 	}
+	@Then("The page title should be {string}")
+	public void the_page_title_should_be(String string) {
+	    
+	}
+	@Then("Customer closes the browser")
+	public void customer_closes_the_browser() {
+	    
+		driver.close();
+	}
+
 
 }

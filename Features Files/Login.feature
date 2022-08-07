@@ -7,4 +7,6 @@ Then 	Customer clicks on Accounts button
 And   Clicks on customer login option
 Then  Customer enters username as "user@phptravels.com" and password as "demouser"
 And 	Clicks on Login button
+Then  The page title should be ""
+Then 	Customer closes the browser
 
